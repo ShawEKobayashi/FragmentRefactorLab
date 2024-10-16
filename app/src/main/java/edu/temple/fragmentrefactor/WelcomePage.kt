@@ -30,7 +30,7 @@ class WelcomePage : Fragment() {
 
             changeButton.setOnClickListener {
                 val name = nameEditText.text
-
+                displayTextView.text =""
                 displayTextView.text = if (name.isNotBlank()) {
                     "Hello, $name!"
                 } else {
